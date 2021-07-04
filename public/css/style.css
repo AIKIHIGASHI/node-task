@@ -1,0 +1,107 @@
+/* reset ================================ */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  font-family: 'Hiragino Sans', sans-serif;
+  line-height: 1.7;
+  letter-spacing: 1px;
+}
+
+body {
+  margin: 0;
+  background-color: #f6faff;
+  color: #6c7686;
+}
+
+ul, li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #6c7686;
+  font-size: 14px;
+}
+
+a:hover {
+  transition: all 0.3s ease;
+}
+
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+body {
+  background: rgb(241, 241, 241);
+}
+
+
+/* header ================================ */
+header {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 30px;
+}
+
+/* form-box ================================ */
+.form-box {
+  width: 800px;
+  background: white;
+  margin: 0 auto;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.form-header {
+  background: rgb(206, 206, 206);
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+table {
+  margin: 0 auto;
+  border-spacing: 40px 20px;
+}
+
+td {
+  text-align: right;
+}
+
+input {
+  width: 400px;
+  height: 30px;
+}
+
+.button {
+  text-align: left;
+}
+
+button {
+  background: rgb(90, 167, 255);
+  color: white;
+  border: none;
+  width: 70px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.link {
+  color: rgb(88, 208, 255);
+  margin-left: 10px;
+}
