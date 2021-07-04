@@ -6,6 +6,8 @@ app.set('view engine', 'ejs')
 
 app.use(expressLayouts)
 
+app.use(express.urlencoded({extended: false}));
+
 app.use(express.static('public'))
 
 app.use('/', require('./routes'))
