@@ -92,16 +92,22 @@ input {
   text-align: left;
 }
 
-button {
+.button > input {
   background: rgb(90, 167, 255);
   color: white;
   border: none;
   width: 70px;
   height: 40px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .link {
   color: rgb(88, 208, 255);
   margin-left: 10px;
+}
+
+.error {
+  color: red;
+  text-align: center;
 }

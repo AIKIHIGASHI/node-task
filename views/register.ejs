@@ -1,27 +1,36 @@
 <div class="form-box">
   <div class="form-header"><%= page %></div>
-  <table>
-    <tbody>
-      <tr>
-        <td>Name</td>
-        <td><input type="text" /></td>
-      </tr>
-      <tr>
-        <td>E-Mail Address</td>
-        <td><input type="text" /></td>
-      </tr>
-      <tr>
-        <td>Password</td>
-        <td><input type="password" /></td>
-      </tr>
-      <tr>
-        <td>Confirm Password</td>
-        <td><input type="password" /></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td class="button"><button><%= page %></button></td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="error">
+    <% if (errors.length) { %> 
+      <% errors.forEach((error) => { %>
+        <div><%= error %></div>
+      <% }) %> 
+    <% } %>
+  </div>
+  <form action="/" method="post">
+    <table>
+      <tbody>
+        <tr>
+          <td>Name</td>
+          <td><input type="text" name="name" /></td>
+        </tr>
+        <tr>
+          <td>E-Mail Address</td>
+          <td><input type="text" name="email" /></td>
+        </tr>
+        <tr>
+          <td>Password</td>
+          <td><input type="password" name="password" /></td>
+        </tr>
+        <tr>
+          <td>Confirm Password</td>
+          <td><input type="password" name="confirm" /></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="button"><input type="submit" value="<%= page %>" /></td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
 </div>
